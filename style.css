@@ -15,38 +15,36 @@ body {
     height: 100vh; /* Make the container full viewport height */
 }
 
-#image-container img {
-    content: url('2.png'); /* Display 2.png */
-    max-width: 75px; /* Shrink width to 100px */
-    max-height: 75px; /* Shrink height to 100px */
-    width: auto; /* Keep aspect ratio */
-    height: auto; /* Keep aspect ratio */
-    display: block; /* Ensure proper display */
-    margin: 0 auto 10px; /* Center image with small space below */
+#image-container {
+    margin-bottom: 10px; /* Adds space between the image and the question */
 }
 
+#valentine-image {
+    width: 80px; /* Make the image small */
+    height: auto; /* Maintain aspect ratio */
+}
 
 #question {
-    font-family: 'Sacramento', cursive; /* Apply Sacramento font */
-    font-size: 52px; /* Set font size */
+    font-family: 'Sacramento', cursive; /* Apply Sacramento font to the question */
+    font-size: 52px; /* Set font size for the question */
 }
 
 #options {
-    margin-top: 20px; /* Add space above options */
+    margin-top: 20px; /* Add space above the options */
 }
 
 button {
-    padding: 10px 20px; /* Set padding */
-    margin: 0 10px; /* Set margin */
-    font-size: 26px; /* Set font size */
-    font-family: 'Sacramento', cursive; /* Apply Sacramento font */
-    background-color: #FB607F; /* Set background color */
-    color: white; /* Set text color */
-    border: none; /* Remove border */
-    cursor: pointer; /* Pointer on hover */
+    padding: 10px 20px; /* Set padding for buttons */
+    margin: 0 10px; /* Set margin around buttons */
+    font-size: 26px; /* Set font size for buttons */
+    font-family: 'Sacramento', cursive; /* Apply Sacramento font to the options */
+    background-color: #FB607F; /* Set button background color */
+    color: white; /* Set text color to white */
+    border: none; /* Remove button border */
+    cursor: pointer; /* Set cursor to pointer on hover */
 }
 
 /* Modify the No button response */
-#no-button::after {
-    content: " Erm you sure"; /* Change "you sure" to "Erm you sure" */
+.no-button::after {
+    content: " Erm you sure"; /* Changing "you sure" to "Erm you sure" */
 }
