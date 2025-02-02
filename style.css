@@ -16,35 +16,30 @@ body {
 }
 
 #image-container img {
-    content: url('2.png'); /* Replacing cat.gif with 2.png */
+    content: url('2.png'); /* Replace cat.gif with 2.png */
 }
 
 #question {
-    font-family: 'Sacramento', cursive; /* Apply Sacramento font to the question */
-    font-size: 52px; /* Set font size for the question */
-}
-
-/* Replacing the original question text */
-#question::before {
-    content: "Will you be my Valentine Lili?";
+    font-family: 'Sacramento', cursive; /* Apply Sacramento font */
+    font-size: 52px; /* Set font size */
 }
 
 #options {
-    margin-top: 20px; /* Add space above the options */
+    margin-top: 20px; /* Add space above options */
 }
 
 button {
-    padding: 10px 20px; /* Set padding for buttons */
-    margin: 0 10px; /* Set margin around buttons */
-    font-size: 26px; /* Set font size for buttons */
-    font-family: 'Sacramento', cursive; /* Apply Sacramento font to the options */
-    background-color: #FB607F; /* Set button background color */
-    color: white; /* Set text color to white */
-    border: none; /* Remove button border */
-    cursor: pointer; /* Set cursor to pointer on hover */
+    padding: 10px 20px; /* Set padding */
+    margin: 0 10px; /* Set margin */
+    font-size: 26px; /* Set font size */
+    font-family: 'Sacramento', cursive; /* Apply Sacramento font */
+    background-color: #FB607F; /* Set background color */
+    color: white; /* Set text color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer on hover */
 }
 
 /* Modify the No button response */
-.no-button::after {
-    content: " Erm you sure"; /* Changing "you sure" to "Erm you sure" */
+#no-button::after {
+    content: " Erm you sure"; /* Change "you sure" to "Erm you sure" */
 }
