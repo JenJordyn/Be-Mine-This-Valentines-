@@ -17,6 +17,12 @@ body {
 
 #image-container img {
     content: url('2.png'); /* Replace cat.gif with 2.png */
+    max-width: 250px; /* Limit width to 250px */
+    max-height: 250px; /* Limit height to 250px */
+    width: auto; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure it's properly displayed */
+    margin: 0 auto 20px; /* Center image with space below */
 }
 
 #question {
