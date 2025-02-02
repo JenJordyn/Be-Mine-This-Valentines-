@@ -15,13 +15,18 @@ body {
     height: 100vh; /* Make the container full viewport height */
 }
 
-#image-container {
-    /* This container will hold the images */
+#image-container img {
+    content: url('2.jpg'); /* Replacing cat.gif with 2.jpg */
 }
 
 #question {
     font-family: 'Sacramento', cursive; /* Apply Sacramento font to the question */
     font-size: 52px; /* Set font size for the question */
+}
+
+/* Updating the question text to include 'Lili' */
+#question::after {
+    content: " Lili?";
 }
 
 #options {
@@ -37,4 +42,9 @@ button {
     color: white; /* Set text color to white */
     border: none; /* Remove button border */
     cursor: pointer; /* Set cursor to pointer on hover */
+}
+
+/* Modify the No button response */
+.no-button::after {
+    content: " Erm you sure"; /* Changing "you sure" to "Erm you sure" */
 }
